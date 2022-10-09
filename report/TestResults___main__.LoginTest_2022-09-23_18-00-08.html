@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-09-23 18:00:08</p>
+                <p class='attribute'><strong>Duration: </strong>24.37 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 1, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.LoginTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_login_invalid</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Username atau password salah
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_login_valid</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element <a>...</a> is not clickable at point (1315, 61). Other element would receive the click: <div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">...</div>
+  (Session info: chrome=105.0.5195.127)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x003FDF13+2219795]
+	Ordinal0 [0x00392841+1779777]
+	Ordinal0 [0x002A423D+803389]
+	Ordinal0 [0x002D99D4+1022420]
+	Ordinal0 [0x002D78C4+1013956]
+	Ordinal0 [0x002D54AB+1004715]
+	Ordinal0 [0x002D4117+999703]
+	Ordinal0 [0x002C9B76+957302]
+	Ordinal0 [0x002EE7FC+1107964]
+	Ordinal0 [0x002C94B4+955572]
+	Ordinal0 [0x002EEA14+1108500]
+	Ordinal0 [0x002FF192+1175954]
+	Ordinal0 [0x002EE616+1107478]
+	Ordinal0 [0x002C7F89+950153]
+	Ordinal0 [0x002C8F56+954198]
+	GetHandleVerifier [0x006F2CB2+3040210]
+	GetHandleVerifier [0x006E2BB4+2974420]
+	GetHandleVerifier [0x00496A0A+565546]
+	GetHandleVerifier [0x00495680+560544]
+	Ordinal0 [0x00399A5C+1808988]
+	Ordinal0 [0x0039E3A8+1827752]
+	Ordinal0 [0x0039E495+1827989]
+	Ordinal0 [0x003A80A4+1867940]
+	BaseThreadInitThunk [0x77206739+25]
+	RtlGetFullPathName_UEx [0x77D18FD2+1218]
+	RtlGetFullPathName_UEx [0x77D18F9D+1165]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\chromedriver_win32\login.py", line 22, in test_login_valid
+    self.driver.find_element(By.LINK_TEXT,"Logout").click()
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 88, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 396, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a>...</a> is not clickable at point (1315, 61). Other element would receive the click: <div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">...</div>
+  (Session info: chrome=105.0.5195.127)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x003FDF13+2219795]
+	Ordinal0 [0x00392841+1779777]
+	Ordinal0 [0x002A423D+803389]
+	Ordinal0 [0x002D99D4+1022420]
+	Ordinal0 [0x002D78C4+1013956]
+	Ordinal0 [0x002D54AB+1004715]
+	Ordinal0 [0x002D4117+999703]
+	Ordinal0 [0x002C9B76+957302]
+	Ordinal0 [0x002EE7FC+1107964]
+	Ordinal0 [0x002C94B4+955572]
+	Ordinal0 [0x002EEA14+1108500]
+	Ordinal0 [0x002FF192+1175954]
+	Ordinal0 [0x002EE616+1107478]
+	Ordinal0 [0x002C7F89+950153]
+	Ordinal0 [0x002C8F56+954198]
+	GetHandleVerifier [0x006F2CB2+3040210]
+	GetHandleVerifier [0x006E2BB4+2974420]
+	GetHandleVerifier [0x00496A0A+565546]
+	GetHandleVerifier [0x00495680+560544]
+	Ordinal0 [0x00399A5C+1808988]
+	Ordinal0 [0x0039E3A8+1827752]
+	Ordinal0 [0x0039E495+1827989]
+	Ordinal0 [0x003A80A4+1867940]
+	BaseThreadInitThunk [0x77206739+25]
+	RtlGetFullPathName_UEx [0x77D18FD2+1218]
+	RtlGetFullPathName_UEx [0x77D18F9D+1165]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 1, Error: 1 -- Duration: 24.37 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
